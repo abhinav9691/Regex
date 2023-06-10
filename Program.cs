@@ -6,6 +6,10 @@ Console.WriteLine(name);
 
 //uc1
 
+//string namepattern = "^[A-Z]{3,}$";
+
+//UC2
+
 string namepattern = "^[A-Z]{3,}$";
 
 
