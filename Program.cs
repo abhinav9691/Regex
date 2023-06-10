@@ -10,7 +10,11 @@ Console.WriteLine(name);
 
 //UC2
 
-string namepattern = "^[A-Z]{3,}$";
+//string namepattern = "^[A-Z]{3,}$";
+
+//UC3
+string namepattern = "^[0-9a-zA-Z]+[._-]{0,2}[0-9a-zA-Z]" + "+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$";
+
 
 
 Regex regex = new Regex(namepattern);
