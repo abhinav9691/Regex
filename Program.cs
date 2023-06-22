@@ -1,33 +1,26 @@
-﻿using System.Text.RegularExpressions;
+﻿using System;
+using System.Text.RegularExpressions;
 
-Console.WriteLine("Enter name");
+
+
+
+//UC4
+Console.WriteLine("Enter The Mobile");
 string name = Console.ReadLine();
-Console.WriteLine(name);
-
-//uc1
-
-//string namepattern = "^[A-Z]{3,}$";
-
-//UC2
-
-//string namepattern = "^[A-Z]{3,}$";
-
-//UC3
-string namepattern = "^[0-9a-zA-Z]+[._-]{0,2}[0-9a-zA-Z]" + "+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$";
-
-
-
+string namepattern = "^[1-9]{1,2}[ ][6-9]{1}[0-9]{9}$";
 Regex regex = new Regex(namepattern);
-
 if (regex.IsMatch(name))
 {
-    Console.ForegroundColor = ConsoleColor.DarkBlue;
+    Console.ForegroundColor = ConsoleColor.Green;
     Console.WriteLine("Valid");
     Console.ResetColor();
 }
 else
 {
-    Console.ForegroundColor = ConsoleColor.DarkMagenta;
+    Console.ForegroundColor = ConsoleColor.Red;
     Console.WriteLine("InValid");
     Console.ResetColor();
 }
+
+
+
