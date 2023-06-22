@@ -4,10 +4,10 @@ using System.Text.RegularExpressions;
 
 
 
-//UC4
-Console.WriteLine("Enter The Mobile");
+//UC5
+Console.WriteLine("Enter The Password");
 string name = Console.ReadLine();
-string namepattern = "^[1-9]{1,2}[ ][6-9]{1}[0-9]{9}$";
+string namepattern = "^[a-zA-z]{8,}$";
 Regex regex = new Regex(namepattern);
 if (regex.IsMatch(name))
 {
@@ -21,6 +21,3 @@ else
     Console.WriteLine("InValid");
     Console.ResetColor();
 }
-
-
-
